@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weave AR Headband v4.4</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <h1>AR 運動頭帶設計</h1>
+  <div class="flex">
+    <div class="controls">
+      <label>文字（預設）:</label>
+      <input type="text" id="textInput" value="Happy Mid-Autumn Festival" />
+      <label>圖樣樣式:</label>
+      <select id="patternSelect">
+        <option value="moon">🟡 中秋圓月</option>
+        <option value="vstripe">🏁 賽車斜紋</option>
+      </select>
+      <label>圖樣顏色:</label>
+      <input type="color" id="patternColor" value="#FFA500" />
+      <label>重複次數:</label>
+      <input type="number" id="repeatCount" min="1" max="10" value="1"/>
+      <canvas id="headbandCanvas" width="300" height="50"></canvas>
+    </div>
+    <div class="preview">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="overlay" width="640" height="480"></canvas>
+    </div>
+  </div>
+</body>
+</html>

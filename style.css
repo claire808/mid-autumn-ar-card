@@ -1,0 +1,27 @@
+
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.controls {
+  margin: 20px;
+}
+.preview {
+  position: relative;
+}
+video, canvas {
+  width: 640px;
+  height: 480px;
+  border: 1px solid #ccc;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
